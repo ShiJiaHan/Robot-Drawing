@@ -1,0 +1,118 @@
+void setup(){
+  size(800,600);
+}
+void draw(){
+  println(mouseX,mouseY);
+//sky
+int a=0;
+int e=0;
+int f=0;
+int z=200;
+  while (z>0){
+  fill(e,f,255);
+  stroke(e,f,255);
+  rect(a,0,4,400);
+  a=a+4;
+  e++;
+  f++;
+  z--;
+  }
+//grass
+int c=400;
+int g=200;
+int h=200;
+int y=200;
+  while (y>0){
+  fill(g,255,h);
+  stroke(g,255,h);
+  rect(0,c,800,2);
+  c=c+2;
+  g--;
+  h--;
+  y--;
+  }
+//sun
+fill(200,200,30);
+stroke(200,200,30);
+ellipse(650,185,160,160);
+fill(250,250,0);
+stroke(250,250,0);
+ellipse(647,190,150,150);
+//mountain
+fill(83,13,165);
+stroke(83,13,165);
+triangle(650,185,350,400,800,400);
+triangle(170,145,0,400,400,400);
+fill(148,64,252);
+stroke(148,64,252);
+triangle(650,185,450,400,800,400);
+triangle(170,145,100,400,400,400);
+//robotShadow
+fill(23,175,11);
+stroke(23,175,11);
+ellipse(200,460,150,50);
+//robotFoot
+fill(90);
+stroke(90);
+ellipse(250,450,55,55);
+//robotNeck
+strokeWeight(2);
+line(265,235,265,355);
+line(255,235,255,355);
+line(275,235,275,355);
+//robotHair
+line(265,235,285,130);
+line(265,235,335,255);
+line(265,235,230,195);
+//robotBody
+fill(0);
+stroke(0);
+rect(205,325,90,125);
+//robotHead
+ellipse(265,235,85,85);
+fill(90);
+stroke(90);
+rect(205,345,90,5);
+//robotZhi
+fill(120);
+stroke(120);
+ellipse(248,225,10,10);
+ellipse(280,207,5,5);
+ellipse(291,235,4,4);
+//robotEyes
+fill(255);
+stroke(255);
+ellipse(275,225,25,25);
+fill(0);
+stroke(0);
+ellipse(275,225,5,5);
+//cloud
+fill(200);
+stroke(200);
+ellipse(200,70,180,50);
+ellipse(220,50,180,50);
+ellipse(260,70,180,50);
+ellipse(225,35,120,50);
+fill(230);
+stroke(230);
+ellipse(200,70,170,40);
+ellipse(220,50,170,40);
+ellipse(260,70,170,40);
+ellipse(225,35,110,40);
+fill(200);
+stroke(200);
+ellipse(560,90,120,100/3);
+ellipse(580,70,120,100/3);
+ellipse(620,90,120,100/3);
+ellipse(585,55,80,100/3);
+fill(230);
+stroke(230);
+ellipse(560,90,105,80/3);
+ellipse(580,70,105,80/3);
+ellipse(620,90,105,80/3);
+ellipse(585,55,73,80/3);
+fill(64,191,252);
+stroke(64,191,252);
+}
+
+
